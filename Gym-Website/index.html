@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       body{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: white;
+        margin:0px;
+        padding:0px;
+        background: url('gymbackground.jpg');
+        height:800px;
+        
+       }
+       .left{
+        border:3px  ;
+        display:inline-block;
+        position:absolute;
+        left:50px;
+        top:30px;
+       }
+       .left img{
+        width:100px;
+        
+       }
+       .left div{
+        text-align: center;
+       }
+       
+       .center{
+        /*border:3px solid white;*/
+        display: block;
+        width:55%;
+        margin:30px auto;
+        
+
+       }
+       
+       .right{
+        /*border:3px solid white;*/
+        display: inline-block;
+        position: absolute;
+        right: 50px;
+        top: 30px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: black;
+        padding: 5px 15px;
+        color: white;
+        font-size: 20px;
+        cursor: pointer;
+        
+       }
+       
+       .navbar li{
+        display: inline-block;
+        font-size: 25px;
+       }
+       .navbar li a{
+        text-decoration: none;
+        padding: 20px 10px;
+        color: white;
+       }
+       .navbar li a:hover{
+        text-decoration: underline;
+        color: hotpink;
+        
+       }
+      
+       
+       .container{
+        border: 3px solid white;
+        margin:100px 80px;
+        padding: 50px;
+        width:30%;
+        border-radius: 20px;
+       }
+       .fgroup input{
+        width:400px;
+        padding: 2px;
+        margin: 10px auto;
+        border: 2px solid black;
+        font-size: 20px;
+        border-radius: 10px;
+
+       }
+       .container h1{
+        text-align: center;
+       }
+       .container button{
+        display:block;
+        padding:2px;
+        margin:10px auto;
+        border-radius: 10px;
+        font-size: 20px;
+        width:200px;
+       }
+       
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="gymlogo.jfif" src="" >
+            <div>Fitness</div>
+
+        </div>
+        <div class="center">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Fitness package</a></li>
+            </ul>
+
+        </div>
+        <div class="right">
+            <button>Sign Up</button>
+            <button>Call</button>
+
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join Now!!</h1>
+        <form action="abc.php">
+            <div class="fgroup">
+                <input type="text" name="Name" placeholder="Enter your name">
+                <input type="text" name="Gender" placeholder="Enter your gender">
+                <input type="text" name="Age" placeholder="Enter your age">
+                <input type="text" name="Email Id" placeholder="Enter your email id">
+                <input type="text" name="Contact Number" placeholder="Enter your contact number">
+                <button>Submit</button>
+
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>
